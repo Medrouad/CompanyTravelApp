@@ -2,13 +2,13 @@ Company Train Application
 
 Build : 
 
-1/ cd rootPath/BillingApp/ 
+1/ cd rootPath/CompanyTravelApp/ 
 
 2/ Execute the command :
 
      $ mvn clean install
      
-3/ cd rootPath/BillingApp/target
+3/ cd rootPath/CompanyTravelApp/target
 
 4/ Run the jar generated in this the folder target with name CompanyTravelApp, using the input and output files as arguments
 
