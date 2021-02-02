@@ -1,5 +1,7 @@
-package com.adlere.domain;
+package com.adlere;
 
+import com.adlere.domain.DayTrip;
+import com.adlere.domain.Summary;
 import com.adlere.service.SummaryService;
 import com.adlere.utils.InputOutputFileCheck;
 
