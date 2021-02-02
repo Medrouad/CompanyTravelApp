@@ -1,11 +1,11 @@
-package com.utils;
+package com.adlere.utils;
 
+import com.adlere.domain.Summary;
+import com.adlere.exceptions.CheckFileException;
+import com.adlere.exceptions.TripException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.domain.DayTrip;
-import com.domain.Summary;
-import com.exceptions.CheckFileException;
-import com.exceptions.TripException;
+import com.adlere.domain.DayTrip;
 
 import java.io.File;
 import java.io.IOException;

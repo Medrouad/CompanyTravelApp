@@ -1,10 +1,10 @@
-package com.service;
+package com.adlere.service;
 
-import com.domain.CustomerSummary;
-import com.domain.Summary;
-import com.domain.Trip;
-import com.domain.DayTrip;
-import com.domain.Tap;
+import com.adlere.domain.CustomerSummary;
+import com.adlere.domain.Summary;
+import com.adlere.domain.Trip;
+import com.adlere.domain.DayTrip;
+import com.adlere.domain.Tap;
 
 import java.util.*;
 import java.util.stream.Collectors;

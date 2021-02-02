@@ -1,7 +1,7 @@
-package com.service;
+package com.adlere.service;
 
-import com.enums.Zone;
-import com.enums.Station;
+import com.adlere.enums.Zone;
+import com.adlere.enums.Station;
 
 import java.util.Arrays;
 import java.util.List;

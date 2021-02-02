@@ -1,6 +1,6 @@
-package com.domain;
+package com.adlere.domain;
 
-import com.enums.Station;
+import com.adlere.enums.Station;
 
 import java.util.Objects;
 

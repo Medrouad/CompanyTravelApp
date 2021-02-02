@@ -1,11 +1,13 @@
-import com.domain.DayTrip;
-import com.domain.Tap;
-import com.domain.CustomerSummary;
-import com.domain.Summary;
-import com.domain.Trip;
-import com.enums.Station;
+package com.adlere.service;
+
+import com.adlere.domain.DayTrip;
+import com.adlere.domain.Tap;
+import com.adlere.domain.CustomerSummary;
+import com.adlere.domain.Summary;
+import com.adlere.domain.Trip;
+import com.adlere.enums.Station;
 import org.junit.jupiter.api.Test;
-import com.service.SummaryService;
+import com.adlere.service.SummaryService;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SummaryServiceTest {
 
-    public DayTrip initDayTrip_A_to_C() {
+    private DayTrip initDayTrip_A_to_C() {
         DayTrip dayTrip = new DayTrip();
         List<Tap> taps = new ArrayList<>();
         taps.add(new Tap(1, 1, Station.A));
@@ -33,6 +35,15 @@ public class SummaryServiceTest {
         customerSummaries.add(customerSummary);
         tripSummary.setCustomerSummaries(customerSummaries);
         return tripSummary;
+    }
+
+    @Test
+    public void test_computeBillingSummary_A_to_C() {
+        DayTrip dayTrip = initDayTrip_A_to_C();
+        SummaryService summaryService = new SummaryService();
+        Summary expected = initCustomerSummaries_A_to_C();
+        Summary summary = summaryService.computeBillingSummary(dayTrip);
+        assertEquals(summary, expected);
     }
 
     private DayTrip initDayTrip_B_C_D_H_G_F() {
@@ -62,14 +73,7 @@ public class SummaryServiceTest {
         return tripSummary;
     }
 
-    @Test
-    public void test_computeBillingSummary_A_to_C() {
-        DayTrip dayTrip = initDayTrip_A_to_C();
-        SummaryService summaryService = new SummaryService();
-        Summary expected = initCustomerSummaries_A_to_C();
-        Summary summary = summaryService.computeBillingSummary(dayTrip);
-        assertEquals(summary, expected);
-    }
+
 
     @Test
     public void test_computeBillingSummary_B_C_D_H_G_F() {

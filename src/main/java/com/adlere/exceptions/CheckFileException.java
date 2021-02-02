@@ -1,4 +1,4 @@
-package com.exceptions;
+package com.adlere.exceptions;
 
 public class CheckFileException extends RuntimeException{
 

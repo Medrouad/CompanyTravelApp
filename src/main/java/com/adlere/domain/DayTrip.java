@@ -1,4 +1,4 @@
-package com.domain;
+package com.adlere.domain;
 
 import java.util.List;
 import java.util.Objects;

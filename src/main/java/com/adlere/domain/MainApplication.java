@@ -1,9 +1,7 @@
-package com;
+package com.adlere.domain;
 
-import com.domain.DayTrip;
-import com.domain.Summary;
-import com.service.SummaryService;
-import com.utils.InputOutputFileCheck;
+import com.adlere.service.SummaryService;
+import com.adlere.utils.InputOutputFileCheck;
 
 import java.io.IOException;
 

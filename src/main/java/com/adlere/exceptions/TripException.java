@@ -1,6 +1,6 @@
-package com.exceptions;
+package com.adlere.exceptions;
 
-import com.domain.DayTrip;
+import com.adlere.domain.DayTrip;
 
 public class TripException {
 

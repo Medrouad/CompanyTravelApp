@@ -1,8 +1,8 @@
-package com.domain;
+package com.adlere.domain;
 
-import com.service.PricingService;
+import com.adlere.service.PricingService;
+import com.adlere.enums.Station;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.enums.Station;
 
 import java.io.Serializable;
 import java.util.List;
